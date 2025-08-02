@@ -21,7 +21,10 @@ app.use(helmet());
 // CORS configuration
 const corsOptions = {
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://your-frontend-domain.com'] // Replace with actual frontend domain
+    ? [
+        'https://wellness-session-platform-roan.vercel.app',
+        'https://your-frontend-domain.com' // Keep this for future deployments
+      ]
     : ['http://localhost:3000', 'http://localhost:5173'], // Vite default port
   credentials: true,
   optionsSuccessStatus: 200
