@@ -2,12 +2,29 @@
 
 A production-ready full-stack wellness technology platform for creating, managing, and sharing wellness session configurations with JWT authentication, auto-save functionality, and MongoDB Atlas cloud database integration.
 
+## 🌐 Live Production Deployment
+
+**🚀 Application is now live and deployed:**
+
+- **Frontend**: https://wellness-session-platform-roan.vercel.app
+- **Backend API**: https://wellness-session-platform-f0wd.onrender.com
+- **Health Check**: https://wellness-session-platform-f0wd.onrender.com/health
+
 ## Tech Stack
 
-**Backend:** Node.js, Express.js, MongoDB Atlas, JWT Authentication  
-**Frontend:** React 19, TypeScript, Vite, TailwindCSS, Framer Motion  
+**Backend:** Node.js, Express.js, MongoDB Atlas, JWT Authentication (deployed on Render)  
+**Frontend:** React 19, TypeScript, Vite, TailwindCSS, Framer Motion (deployed on Vercel)  
 
-## Production Setup
+## 🎯 Quick Test
+
+1. **Visit**: https://wellness-session-platform-roan.vercel.app
+2. **Register** a new account or **Login** 
+3. **Create Session** using these JSON Configuration URLs:
+   - `https://jsonplaceholder.typicode.com/posts/1`
+   - `https://httpbin.org/json`
+   - `https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_network.json`
+
+## Local Development Setup
 
 ### Prerequisites
 - Node.js (v18+)
@@ -30,22 +47,6 @@ npm install
 cp .env.example .env
 # Configure VITE_API_URL to point to your backend
 npm run build
-```
-
-## Environment Configuration
-
-### Backend (.env)
-```env
-PORT=5001
-MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/wellness-session-platform?retryWrites=true&w=majority
-JWT_SECRET=your_production_jwt_secret_key
-JWT_EXPIRE=24h
-NODE_ENV=production
-```
-
-### Frontend (.env)
-```env
-VITE_API_URL=https://your-backend-domain.com/api
 ```
 
 ## Core Features
@@ -112,24 +113,30 @@ Sessions reference external JSON configurations with structured wellness data:
 - `example-wellness-session.json` - Complete meditation session with phases, audio, tracking
 - `simple-session.json` - Basic breathing exercise configuration
 
-## Production Deployment
+## Production Deployment Status
 
-### Backend (Railway/Render/Heroku)
-1. Set environment variables for production
-2. Configure MongoDB Atlas with proper IP whitelisting
-3. Deploy with `npm start` command
-4. Ensure CORS is configured for your frontend domain
+### ✅ Current Live Deployment
+- **Frontend**: Deployed on Vercel at https://wellness-session-platform-roan.vercel.app
+- **Backend**: Deployed on Render at https://wellness-session-platform-f0wd.onrender.com  
+- **Database**: MongoDB Atlas cloud cluster
+- **Status**: Fully operational with all features working
 
-### Frontend (Vercel/Netlify)
-1. Run `npm run build` to generate production build
-2. Deploy `dist` folder to hosting platform
-3. Configure environment variables for production API URL
-4. Set up custom domain and SSL
+### Backend (Render)
+1. ✅ Environment variables configured for production
+2. ✅ MongoDB Atlas connected with proper IP whitelisting
+3. ✅ Deployed with `npm start` command
+4. ✅ CORS configured for Vercel frontend domain
+
+### Frontend (Vercel)
+1. ✅ Production build generated with `npm run build`
+2. ✅ Deployed `dist` folder to Vercel
+3. ✅ Environment variables configured for production API URL
+4. ✅ Custom domain and SSL configured
 
 ## Health Check
 
-- **Backend Health:** `GET /health`
-- **Database Status:** Automatic connection monitoring
+- **Production Backend Health:** https://wellness-session-platform-f0wd.onrender.com/health
+- **Database Status:** Automatic connection monitoring with MongoDB Atlas
 - **Authentication:** JWT token validation on protected routes
 
 ## Architecture
