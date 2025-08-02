@@ -36,11 +36,12 @@ export const useSession = (id?: string): UseSessionReturn => {
     setError(null);
 
     try {
-      const response = await sessionAPI.getSessionById(id);
-      if (response.success) {
-        setSession(response.data);
+      const sessionData = await sessionAPI.getSessionById(id);
+      // The API service already extracts response.data.data, so we get the session directly
+      if (sessionData) {
+        setSession(sessionData);
       } else {
-        setError(response.message || 'Failed to fetch session');
+        setError('Session not found');
       }
     } catch (err: any) {
       setError(err.response?.data?.message || 'Failed to fetch session');
