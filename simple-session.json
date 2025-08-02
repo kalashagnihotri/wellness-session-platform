@@ -1,0 +1,22 @@
+{
+  "sessionInfo": {
+    "title": "5-Minute Breathing Exercise",
+    "description": "Quick breathing exercise for stress relief",
+    "duration": 300,
+    "difficulty": "beginner",
+    "category": "breathing"
+  },
+  "instructions": [
+    "Sit comfortably with your back straight",
+    "Breathe in for 4 counts",
+    "Hold for 4 counts", 
+    "Breathe out for 6 counts",
+    "Repeat for 5 minutes"
+  ],
+  "settings": {
+    "autoStart": true,
+    "showTimer": true,
+    "backgroundMusic": true
+  },
+  "tags": ["breathing", "stress-relief", "quick", "beginner"]
+}

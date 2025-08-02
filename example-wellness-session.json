@@ -1,0 +1,222 @@
+{
+  "sessionInfo": {
+    "id": "mindful-morning-meditation",
+    "title": "Mindful Morning Meditation",
+    "description": "Start your day with intention through guided mindfulness and breathing exercises",
+    "duration": 900,
+    "difficulty": "beginner",
+    "category": "meditation",
+    "instructor": "Dr. Sarah Chen",
+    "version": "1.2"
+  },
+  "sessionStructure": {
+    "phases": [
+      {
+        "name": "Preparation",
+        "duration": 120,
+        "type": "setup",
+        "instructions": [
+          "Find a comfortable seated position",
+          "Close your eyes gently or soften your gaze",
+          "Take three deep, natural breaths"
+        ],
+        "backgroundAudio": {
+          "type": "nature",
+          "source": "forest-morning.mp3",
+          "volume": 0.3
+        }
+      },
+      {
+        "name": "Body Scan",
+        "duration": 300,
+        "type": "guided",
+        "instructions": [
+          "Begin at the top of your head",
+          "Slowly scan down through your body",
+          "Notice any areas of tension without judgment",
+          "Allow each part to relax as you breathe"
+        ],
+        "cues": [
+          {
+            "time": 60,
+            "type": "gentle_bell",
+            "message": "Notice your shoulders and neck"
+          },
+          {
+            "time": 180,
+            "type": "soft_chime",
+            "message": "Feel your chest rising and falling"
+          },
+          {
+            "time": 240,
+            "type": "gentle_bell",
+            "message": "Relax your arms and hands"
+          }
+        ]
+      },
+      {
+        "name": "Breath Awareness",
+        "duration": 360,
+        "type": "focused",
+        "breathingPattern": {
+          "inhale": 4,
+          "hold": 2,
+          "exhale": 6,
+          "pause": 2,
+          "cycles": 15
+        },
+        "guidance": [
+          "Focus your attention on your natural breath",
+          "Count: inhale for 4, hold for 2, exhale for 6, pause for 2",
+          "If your mind wanders, gently return to counting",
+          "There's no perfect way - just notice and return"
+        ],
+        "visualCues": {
+          "enabled": true,
+          "type": "breathing_circle",
+          "colors": ["#4CAF50", "#2196F3"]
+        }
+      },
+      {
+        "name": "Loving Kindness",
+        "duration": 180,
+        "type": "contemplative",
+        "phrases": [
+          "May I be happy and healthy",
+          "May I be at peace",
+          "May I be kind to myself",
+          "May I live with ease"
+        ],
+        "extension": [
+          "Now extend these wishes to someone you love",
+          "May you be happy and healthy",
+          "May you be at peace",
+          "Finally, extend to all beings everywhere"
+        ]
+      },
+      {
+        "name": "Integration",
+        "duration": 120,
+        "type": "closing",
+        "instructions": [
+          "Take a moment to notice how you feel",
+          "Set an intention for your day",
+          "When ready, gently open your eyes",
+          "Carry this sense of calm with you"
+        ],
+        "backgroundAudio": {
+          "type": "singing_bowl",
+          "source": "tibetan-bowl-soft.mp3",
+          "volume": 0.4,
+          "fadeOut": true
+        }
+      }
+    ]
+  },
+  "personalizations": {
+    "adaptable": true,
+    "customizations": [
+      {
+        "setting": "duration",
+        "options": [300, 600, 900, 1200],
+        "descriptions": ["5 min", "10 min", "15 min", "20 min"]
+      },
+      {
+        "setting": "background_sounds",
+        "options": ["nature", "silence", "soft_music", "binaural"],
+        "descriptions": ["Nature sounds", "Complete silence", "Ambient music", "Focus tones"]
+      },
+      {
+        "setting": "guidance_level",
+        "options": ["full", "minimal", "silent"],
+        "descriptions": ["Full guidance", "Key prompts only", "Timer only"]
+      }
+    ]
+  },
+  "resources": {
+    "audioFiles": [
+      {
+        "name": "forest-morning.mp3",
+        "url": "https://cdn.wellness-platform.com/audio/nature/forest-morning.mp3",
+        "duration": 900,
+        "size": "8.2MB"
+      },
+      {
+        "name": "tibetan-bowl-soft.mp3",
+        "url": "https://cdn.wellness-platform.com/audio/bells/tibetan-bowl-soft.mp3",
+        "duration": 30,
+        "size": "1.1MB"
+      }
+    ],
+    "images": [
+      {
+        "name": "morning-landscape.jpg",
+        "url": "https://cdn.wellness-platform.com/images/morning-landscape.jpg",
+        "purpose": "background_visual"
+      }
+    ],
+    "references": [
+      {
+        "title": "Mindfulness-Based Stress Reduction",
+        "author": "Jon Kabat-Zinn",
+        "url": "https://example.com/mbsr-research"
+      }
+    ]
+  },
+  "progressTracking": {
+    "enabled": true,
+    "metrics": [
+      "completion_rate",
+      "session_frequency",
+      "mood_before",
+      "mood_after",
+      "stress_level_before",
+      "stress_level_after"
+    ],
+    "checkpoints": [
+      {
+        "time": 300,
+        "prompt": "How are you feeling right now?",
+        "type": "mood_scale",
+        "scale": [1, 2, 3, 4, 5]
+      },
+      {
+        "time": 900,
+        "prompt": "How do you feel after this session?",
+        "type": "mood_scale",
+        "scale": [1, 2, 3, 4, 5]
+      }
+    ]
+  },
+  "tags": [
+    "mindfulness",
+    "meditation",
+    "morning",
+    "breathing",
+    "body-scan",
+    "loving-kindness",
+    "stress-relief",
+    "beginner-friendly"
+  ],
+  "metadata": {
+    "created": "2025-01-15T08:00:00Z",
+    "lastModified": "2025-01-20T14:30:00Z",
+    "creator": {
+      "name": "Dr. Sarah Chen",
+      "credentials": "PhD in Psychology, Certified Mindfulness Instructor",
+      "contact": "sarah.chen@wellness-platform.com"
+    },
+    "approvals": [
+      {
+        "reviewer": "Wellness Review Board",
+        "date": "2025-01-18T10:00:00Z",
+        "status": "approved"
+      }
+    ],
+    "usage_stats": {
+      "total_sessions": 15420,
+      "average_rating": 4.8,
+      "completion_rate": 0.87
+    }
+  }
+}

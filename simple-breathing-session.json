@@ -1,0 +1,30 @@
+{
+  "sessionInfo": {
+    "title": "5 Minute Breathing Break",
+    "description": "A quick breathing exercise for stress relief",
+    "duration": 300,
+    "difficulty": "beginner",
+    "category": "breathing"
+  },
+  "instructions": [
+    "Sit comfortably with your back straight",
+    "Place one hand on your chest, one on your belly",
+    "Breathe in slowly through your nose for 4 counts",
+    "Hold your breath for 2 counts",
+    "Exhale slowly through your mouth for 6 counts",
+    "Repeat this cycle 10 times"
+  ],
+  "breathingPattern": {
+    "inhale": 4,
+    "hold": 2,
+    "exhale": 6,
+    "cycles": 10
+  },
+  "benefits": [
+    "Reduces stress and anxiety",
+    "Improves focus and concentration",
+    "Lowers blood pressure",
+    "Promotes relaxation"
+  ],
+  "tags": ["breathing", "stress-relief", "quick", "workplace-friendly"]
+}
