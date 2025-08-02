@@ -36,10 +36,9 @@ export const useSession = (id?: string): UseSessionReturn => {
     setError(null);
 
     try {
-      const sessionData = await sessionAPI.getSessionById(id);
-      // The API service already extracts response.data.data, so we get the session directly
-      if (sessionData) {
-        setSession(sessionData);
+      const response = await sessionAPI.getSessionById(id);
+      if (response.success && response.data) {
+        setSession(response.data);
       } else {
         setError('Session not found');
       }
