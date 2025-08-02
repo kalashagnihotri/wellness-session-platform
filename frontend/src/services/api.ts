@@ -68,7 +68,7 @@ export const sessionAPI = {
 
   getSessionById: async (id: string) => {
     const response = await api.get(`/sessions/my-sessions/${id}`);
-    return response.data;
+    return response.data.data; // Return the session data directly
   },
 
   saveDraftSession: async (data: {

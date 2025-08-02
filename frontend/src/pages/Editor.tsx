@@ -62,9 +62,9 @@ const Editor: React.FC = () => {
   // Load session data when editing
   useEffect(() => {
     if (session) {
-      setTitle(session.title);
-      setTags(joinTags(session.tags));
-      setJsonFileUrl(session.json_file_url);
+      setTitle(session.title || '');
+      setTags(session.tags ? joinTags(Array.isArray(session.tags) ? session.tags : [session.tags]) : '');
+      setJsonFileUrl(session.json_file_url || '');
     }
   }, [session]);
 

@@ -90,7 +90,7 @@ const getSessionById = async (req, res, next) => {
     res.status(200).json({
       success: true,
       message: 'Session retrieved successfully',
-      data: { session }
+      data: session
     });
 
   } catch (error) {
